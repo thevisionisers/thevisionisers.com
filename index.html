@@ -20,16 +20,33 @@
 				background: black;
 				font-family: 'Montserrat', sans-serif;
 				text-transform: uppercase;
+				margin: 0px;
+			}
+
+			.background {
+				background-image: url(https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg);
+				filter: blur(12px
+				-webkit-filter: blur(12px);
+				height: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 100%;
+				overflow: hidden;
 			}
 
 			.container {
-				position: relative;
+				position: absolute;
 				margin: auto;
 				overflow: hidden;
-				width: 520px;
+				width: 600px;
 				background: black;
-				box-shadow: inset 0 0 2px 0px white;
+				box-shadow: 0 0 2px 0px black;
 				border-radius: 10px;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 			}
 
 			.video-container {
@@ -37,10 +54,6 @@
 					width: 300px;
 					aspect-ratio: 16 / 9;
 					position: relative;
-				background-image: url("https://static.wixstatic.com/media/0da768_863eb85f0dd04fe9b4ea3d5372da3b25~mv2.png/v1/crop/x_0,y_0,w_4,h_4,q_85,enc_auto/0da768_863eb85f0dd04fe9b4ea3d5372da3b25~mv2.png");
-						background-size: auto;
-					background-repeat: repeat;
-					background-position: center center;
 				 z-index: 1;
 			}
 
@@ -54,21 +67,21 @@
 				top: 50%;
 				-webkit-transform: translate(-50%, -50%);
 				transform: translate(-50%, -50%);
-			}
+				background: black;
+				border: 1px solid black;
 
-			video {
 				--bg-overlay-color: rgb(33, 33, 33);
 				-webkit-mask-box-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg preserveAspectRatio='none' data-bbox='0 0 77.4 70.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 77.4 70.1' height='70.1' width='77.4' data-type='ugc'%3E%3Cg%3E%3Cpath d='M26.6 70.1 0 0h24.8l14.5 46L53.7 0h23.7L50.6 70.1h-24Z' fill='%23000000' stroke-width='.25mm' stroke='%23000000' font-size='12' fill-rule='evenodd' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E%0A")
 			}
 
 			p {
 				font-size: 0.6em;
-				color: gray;
+				color: white;
 				letter-spacing: 1px;
 			}
 
 			h1 {
-				font-size: 1.2em;
+				font-size: 1.6em;
 				color: white;
 				margin-top: -5px;
 			}
@@ -85,10 +98,10 @@
 
 			.address {
 				position: absolute;
-				width: 40%;
+				width: 50%;
 				height: 100%;
 				top: 10%;
-				left: 60%;
+				left: 55%;
 			}
 
 			.desc {
@@ -98,13 +111,13 @@
 				color: white;
 				font-size: .7em;
 				line-height: 1.6em;
-				margin-right: 25px;
 				text-align: justify;
 				font-weight: 400;
 			}
 		</style>
 	</head>
 	<body>
+		<div class="background"></div>
 		<div class="container">
 			<div class="logo">
 				<div class="video-container">
